@@ -6,7 +6,7 @@ import os
 
 app = FastAPI()
 
-# Variables de entorno para suma y resta
+# URLs externas (Railway)
 SUMA_URL = os.getenv("SUMA_URL", "http://localhost:8001/sumar")
 RESTA_URL = os.getenv("RESTA_URL", "http://localhost:8002/restar")
 
@@ -46,6 +46,7 @@ def resolver(valores: Input):
 
     resultado = suma * resta
     print("resultado -->", resultado)
+
     try:
         db = get_db_connection()
 
