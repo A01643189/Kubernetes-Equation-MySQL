@@ -1,0 +1,7 @@
+resources:
+  - almacenar.yaml
+  - suma.yaml
+  - resta.yaml
+  - ecuacion.yaml
+  - mysql.yaml
+  - mysql-initdb-configmap.yaml
